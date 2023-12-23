@@ -1,0 +1,218 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+  padding: 1rem;
+  
+
+}
+.results {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  border-radius: 0 0 2rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 35px 0;
+}
+
+.title {
+  color: hsl(241, 100%, 89%);
+  font-size: larger;
+  padding-top: 1rem;
+}
+
+.score {
+  color: hsl(0, 0%, 100%);
+  background: linear-gradient(to top, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0 15px 0;
+}
+
+.score small {
+  color: hsl(241, 100%, 89%);
+}
+h1 {
+  font-size: 50px;
+  margin: 0;
+}
+h3 {
+  color: hsl(0, 0%, 100%);
+  font-size: 25px;
+}
+
+.text {
+  color: hsl(241, 100%, 89%);
+  font-size: 20px;
+  margin: 0;
+  padding: 0 3rem 0 3rem;
+}
+.summary {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem 0 1rem;
+}
+
+.summary h4 {
+  font-size: 20px;
+}
+.reaction {
+  width: 100%;
+  background-color: hsl(0, 28%, 83%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 10px;
+  padding: 0 1rem 0 1rem;
+}
+
+.beginning-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.reaction h4 {
+  color: hsl(0, 100%, 67%);
+  justify-content: space-between;
+  justify-items: flex-end;
+  font-size: 15px;
+}
+
+.summary p {
+  color: hsl(224, 30%, 27%);
+  font-size: 15px;
+  padding: 0 1rem 0 1rem;
+}
+
+span {
+  color: hsl(224, 27%, 71%);
+}
+
+.Memory {
+  width: 100%;
+  background-color: hsl(37, 15%, 83%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 10px;
+  padding: 0 1rem 0 1rem;
+}
+.Memory h4 {
+  color: hsl(39, 100%, 56%);
+  justify-content: space-between;
+  justify-items: flex-end;
+  font-size: 15px;
+}
+
+.Verbal {
+  width: 100%;
+  background-color: hsl(166, 29%, 83%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 10px;
+  padding: 0 1rem 0 1rem;
+}
+
+.Verbal h4 {
+  color: hsl(166, 100%, 37%);
+  justify-content: space-between;
+  justify-items: flex-end;
+  font-size: 15px;
+}
+
+.Visual {
+  width: 100%;
+  background-color: hsl(234, 45%, 87%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 10px;
+  padding: 0 1rem 0 1rem;
+  /* box-shadow: 1px 1px 1px 1px hsl(0, 0%, 5%); */
+}
+
+.Visual h4 {
+  color: hsl(234, 85%, 45%);
+  justify-content: space-between;
+  justify-items: flex-end;
+  font-size: 15px;
+}
+
+button {
+  background-color: hsl(224, 30%, 27%);
+  padding: 1rem;
+  color: hsl(0, 0%, 100%);
+  border-radius: 25px;
+  font-size: 20px;
+  margin-bottom: 2rem;
+}
+
+/* Desktop design */
+@media (min-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 0.5rem;
+    box-shadow: 4px 4px hsla(0, 3%, 76%, 0.234);
+    max-height: 100%;
+    border-radius: 25px;
+  }
+  .results {
+    border-radius: 2rem;
+  }
+
+  .text {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    width: 75%;
+  }
+
+  .summary {
+    border-radius: 2rem;
+    padding: 1rem;
+    
+  }
+}
